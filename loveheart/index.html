@@ -100,8 +100,8 @@ if (!document.createElement('canvas').getContext) {
 	document.execCommand("stop");
 } else {
 	setTimeout(function () {
-		startHeartAnimation();
-	}, 5000);
+        startHeartAnimation();
+    }, 100); // 将延迟时间改为 1000 毫秒（1 秒）
 
 	timeElapse(together);
 	setInterval(function () {
